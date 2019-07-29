@@ -4,7 +4,7 @@
    ramp-up: 2m
    hold-for: 60m
    scenario:
-     script: jpetstore.jmx
+     script: ./jpetstore.jmx
      properties:
          hostname: 10.226.181.61
      datasources:
@@ -16,7 +16,7 @@
        random-order: false
 
  reporting:
-   - module: bzt
+   - module: jmeter
      test: Configuration Test
    - module: junit-xml
      filename: report.xml
