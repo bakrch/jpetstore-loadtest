@@ -1,19 +1,19 @@
 ---
  execution:
-   concurrency: 50
-   ramp-up: 2m
-   hold-for: 60m
-   scenario:
-     script: ./jpetstore.jmx
-     properties:
-         hostname: 10.226.181.61
-     datasources:
-     - path: ./logins.csv
-       delimiter: ';'
-       quoted: false
-       loop: true
-       variable-names: login,password
-       random-order: false
+   - concurrency: 50
+     ramp-up: 2m
+     hold-for: 60m
+     scenario:
+       script: /jpetstore.jmx
+       properties:
+           hostname: 10.226.181.61
+       datasources:
+       - path: ./logins.csv
+         delimiter: ';'
+         quoted: false
+         loop: true
+         variable-names: login,password
+         random-order: false
 
  reporting:
    - module: jmeter
