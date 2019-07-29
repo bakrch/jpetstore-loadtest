@@ -60,7 +60,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">jpetstore.local</stringProp>
+              <stringProp name="HTTPSampler.domain">10.226.181.61</stringProp>
               <stringProp name="HTTPSampler.port">8080</stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -210,7 +210,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">jpetstore.local</stringProp>
+              <stringProp name="HTTPSampler.domain">10.226.181.61</stringProp>
               <stringProp name="HTTPSampler.port">8080</stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -344,7 +344,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">jpetstore.local</stringProp>
+              <stringProp name="HTTPSampler.domain">10.226.181.61</stringProp>
               <stringProp name="HTTPSampler.port">8080</stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -546,7 +546,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">jpetstore.local</stringProp>
+              <stringProp name="HTTPSampler.domain">10.226.181.61</stringProp>
               <stringProp name="HTTPSampler.port">8080</stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -610,7 +610,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">jpetstore.local</stringProp>
+              <stringProp name="HTTPSampler.domain">10.226.181.61</stringProp>
               <stringProp name="HTTPSampler.port">8080</stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -744,7 +744,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">jpetstore.local</stringProp>
+              <stringProp name="HTTPSampler.domain">10.226.181.61</stringProp>
               <stringProp name="HTTPSampler.port">8080</stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -807,7 +807,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">jpetstore.local</stringProp>
+              <stringProp name="HTTPSampler.domain">10.226.181.61</stringProp>
               <stringProp name="HTTPSampler.port">8080</stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -951,7 +951,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">jpetstore.local</stringProp>
+              <stringProp name="HTTPSampler.domain">10.226.181.61</stringProp>
               <stringProp name="HTTPSampler.port">8080</stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -1009,7 +1009,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">jpetstore.local</stringProp>
+              <stringProp name="HTTPSampler.domain">10.226.181.61</stringProp>
               <stringProp name="HTTPSampler.port">8080</stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -1108,7 +1108,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">jpetstore.local</stringProp>
+              <stringProp name="HTTPSampler.domain">10.226.181.61</stringProp>
               <stringProp name="HTTPSampler.port">8080</stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -1182,7 +1182,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">jpetstore.local</stringProp>
+              <stringProp name="HTTPSampler.domain">10.226.181.61</stringProp>
               <stringProp name="HTTPSampler.port">8080</stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -1305,7 +1305,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">jpetstore.local</stringProp>
+              <stringProp name="HTTPSampler.domain">10.226.181.61</stringProp>
               <stringProp name="HTTPSampler.port">8080</stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -1373,7 +1373,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">jpetstore.local</stringProp>
+              <stringProp name="HTTPSampler.domain">10.226.181.61</stringProp>
               <stringProp name="HTTPSampler.port">8080</stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -1447,7 +1447,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">jpetstore.local</stringProp>
+              <stringProp name="HTTPSampler.domain">10.226.181.61</stringProp>
               <stringProp name="HTTPSampler.port">8080</stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -1515,7 +1515,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">jpetstore.local</stringProp>
+              <stringProp name="HTTPSampler.domain">10.226.181.61</stringProp>
               <stringProp name="HTTPSampler.port">8080</stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -1583,7 +1583,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">jpetstore.local</stringProp>
+              <stringProp name="HTTPSampler.domain">10.226.181.61</stringProp>
               <stringProp name="HTTPSampler.port">8080</stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -1644,7 +1644,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">jpetstore.local</stringProp>
+              <stringProp name="HTTPSampler.domain">10.226.181.61</stringProp>
               <stringProp name="HTTPSampler.port">8080</stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
               <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -1802,7 +1802,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">jpetstore.local</stringProp>
+              <stringProp name="HTTPSampler.domain">10.226.181.61</stringProp>
               <stringProp name="HTTPSampler.port">8080</stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -1880,7 +1880,7 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">jpetstore.local</stringProp>
+              <stringProp name="HTTPSampler.domain">10.226.181.61</stringProp>
               <stringProp name="HTTPSampler.port">8080</stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -1933,7 +1933,7 @@
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">jpetstore.local</stringProp>
+              <stringProp name="HTTPSampler.domain">10.226.181.61</stringProp>
               <stringProp name="HTTPSampler.port">8080</stringProp>
               <stringProp name="HTTPSampler.protocol">http</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -2191,7 +2191,7 @@
       <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
         <stringProp name="delimiter">;</stringProp>
         <stringProp name="fileEncoding">UTF-8</stringProp>
-        <stringProp name="filename">C:/Users/bchakkor/Desktop/dataset JPetStore/logins.csv</stringProp>
+        <stringProp name="filename">${__P(csv_path)}</stringProp>
         <boolProp name="ignoreFirstLine">false</boolProp>
         <boolProp name="quotedData">false</boolProp>
         <boolProp name="recycle">true</boolProp>
