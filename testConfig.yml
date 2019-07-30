@@ -14,3 +14,15 @@
          loop: true
          variable-names: login,password
          random-order: false
+
+ reporting:
+   - module: jmeter
+     test: Configuration Test
+   - module: junit-xml
+     filename: report.xml
+     data-source: pass-fail
+   - module: fail-criteria
+     criterias:
+     - avg-rt>250ms for 30s, continue as failed
+     - failures>10% for 10s, continue as failed
+     - failures>70% for 15s, stop as failed
