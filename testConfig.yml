@@ -4,11 +4,11 @@
      ramp-up: 2m
      hold-for: 60m
      scenario:
-       script: /jpetstore.jmx
+       script: ./jpetstore.jmx
        properties:
-           hostname: 10.226.181.61
-       datasources:
-       - path: ./logins.csv
+           hostname: 10.226.181.67
+       data-sources:
+       - path: ./loadtest/logins.csv
          delimiter: ';'
          quoted: false
          loop: true
