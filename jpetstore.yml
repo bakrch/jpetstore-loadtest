@@ -1,0 +1,382 @@
+---
+execution:
+- concurrency: 30
+  hold-for: 3570s
+  iterations: 1
+  ramp-up: 30s
+  scenario: Thread Group
+scenarios:
+  Thread Group:
+    data-sources:
+    - delimiter: ;
+      loop: true
+      path: ./loadtest/logins.csv
+      quoted: false
+      variable-names: login,password
+    default-address: /
+    requests:
+    - do:
+      - follow-redirects: true
+        headers:
+          Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+          Accept-Encoding: gzip, deflate
+          Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+          DNT: '1'
+          Referer: http://10.226.181.67:8080/jpetstore/
+          Upgrade-Insecure-Requests: '1'
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+        label: 210 homePage
+        method: GET
+        url: http://10.226.181.67:8080/jpetstore/actions/Catalog.action
+      include-timers: false
+      transaction: 210 homePage
+    - do:
+      - follow-redirects: true
+        headers:
+          Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+          Accept-Encoding: gzip, deflate
+          Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+          DNT: '1'
+          Referer: http://10.226.181.67:8080/jpetstore/actions/Catalog.action
+          Upgrade-Insecure-Requests: '1'
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+        label: 213 sign up
+        method: GET
+        url: http://10.226.181.67:8080/jpetstore/actions/Account.action?signonForm=
+      include-timers: false
+      transaction: 213 sign up
+    - do:
+      - follow-redirects: true
+        headers:
+          Accept: '*/*'
+          Accept-Encoding: gzip, deflate, br
+          Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+          DNT: '1'
+          Referer: https://js.driftt.com/deploy/assets/index.html
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+        label: 241 sign up
+        method: GET
+        url: https://js.driftt.com:443/embeds/1561984830000/gewhsy95fayk.json
+      include-timers: false
+      transaction: 241 sign up
+    - do:
+      - follow-redirects: true
+        headers:
+          Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+          Accept-Encoding: gzip, deflate
+          Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+          DNT: '1'
+          Upgrade-Insecure-Requests: '1'
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+        label: 249 sign up
+        method: GET
+        url: http://10.226.181.67:8080/jpetstore/actions/Account.action?newAccountForm=
+      include-timers: false
+      transaction: 249 sign up
+    - do:
+      - body:
+          __fp: cIfF-jtLGiQd9wK14se_S0RWSjLY3L5hdhjU0XQpSlanccHFboFGpxP38o2HfRU8jAORzi1XKTeAwUOj35B8UBvKYWqxbBoeQ0jWsfROiFq7wRQR9RUijhoDn-fvxPhHAgGwLm96zYBhPLTUvQurmd-As6ikugjCE-VdT40LWDMz0W21TN4H5D42e-0-RJUZ
+          _sourcePage: f58VrlgTNlOFCVDbKBjA-F2ZmptD1OuB0GKKRNkXcytISZ17OT4YPSM3AqAOSNDkD8RTIvqqavo3lVA6-LmSo2BdK--vpTk2EaDJG5RI3K4=
+          account.address1: 13 avenue la baguette
+          account.address2: walou
+          account.bannerOption: 'true'
+          account.city: bordeaux
+          account.country: France
+          account.email: ${login}@test.com
+          account.favouriteCategoryId: BIRDS
+          account.firstName: ${login}
+          account.languagePreference: english
+          account.lastName: ${login}
+          account.listOption: 'true'
+          account.phone: 0699889372
+          account.state: '123'
+          account.zip: '33800'
+          newAccount: Save Account Information
+          password: ${password}
+          repeatedPassword: ${password}
+          username: ${login}
+        content-encoding: UTF-8
+        follow-redirects: true
+        headers:
+          Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+          Accept-Encoding: gzip, deflate
+          Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+          Content-Type: application/x-www-form-urlencoded
+          DNT: '1'
+          Referer: http://10.226.181.67:8080/jpetstore/actions/Account.action?newAccountForm=
+          Upgrade-Insecure-Requests: '1'
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+        label: 251 sign up
+        method: POST
+        url: http://10.226.181.67:8080/jpetstore/actions/Account.action
+      - follow-redirects: true
+        headers:
+          Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+          Accept-Encoding: gzip, deflate
+          Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+          DNT: '1'
+          Referer: http://10.226.181.67:8080/jpetstore/actions/Account.action?newAccountForm=
+          Upgrade-Insecure-Requests: '1'
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+        label: 252 sign up
+        method: GET
+        url: http://10.226.181.67:8080/jpetstore/actions/Catalog.action
+      include-timers: false
+      transaction: 251 sign up
+    - do:
+      - follow-redirects: true
+        headers:
+          Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+          Accept-Encoding: gzip, deflate
+          Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+          DNT: '1'
+          Upgrade-Insecure-Requests: '1'
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+        label: 259 log in
+        method: GET
+        url: http://10.226.181.67:8080/jpetstore/actions/Catalog.action
+      - follow-redirects: true
+        headers:
+          Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+          Accept-Encoding: gzip, deflate
+          Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+          DNT: '1'
+          Referer: http://10.226.181.67:8080/jpetstore/actions/Catalog.action
+          Upgrade-Insecure-Requests: '1'
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+        label: 262 log in
+        method: GET
+        url: http://10.226.181.67:8080/jpetstore/actions/Account.action?signonForm=
+      include-timers: false
+      transaction: 259 log in
+    - do:
+      - follow-redirects: true
+        headers:
+          Accept: '*/*'
+          Accept-Encoding: gzip, deflate, br
+          Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+          DNT: '1'
+          Referer: https://js.driftt.com/deploy/assets/index.html
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+        label: 265 log in
+        method: GET
+        url: https://js.driftt.com:443/embeds/1561985730000/gewhsy95fayk.json
+      - body:
+          __fp: uwvxRWm6mgZjl1YdjrKAmno0RwNFoYyaHPg-Pib9O496uq7-b7VYVvOlm75aqi_5
+          _sourcePage: v59BdXNi5EfdZ08Bry8sSYjREM7ecYQZknzJQPjldCxIENR5KzfOIAD6zdJnyoD26efCLjuRAR6PsUso92WTM313mnfyIEzGFeOP2VlQ1k8=
+          password: ${password}
+          signon: Login
+          username: ${login}
+        content-encoding: UTF-8
+        follow-redirects: true
+        headers:
+          Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+          Accept-Encoding: gzip, deflate
+          Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+          Content-Type: application/x-www-form-urlencoded
+          DNT: '1'
+          Referer: http://10.226.181.67:8080/jpetstore/actions/Account.action
+          Upgrade-Insecure-Requests: '1'
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+        label: 266 log in
+        method: POST
+        url: http://10.226.181.67:8080/jpetstore/actions/Account.action
+      - content-encoding: UTF-8
+        follow-redirects: true
+        headers:
+          Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+          Accept-Encoding: gzip, deflate
+          Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+          DNT: '1'
+          Referer: http://10.226.181.67:8080/jpetstore/actions/Account.action
+          Upgrade-Insecure-Requests: '1'
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+        label: 267 log in
+        method: GET
+        url: http://10.226.181.67:8080/jpetstore/actions/Catalog.action
+      include-timers: false
+      transaction: 264 log in
+    - do:
+      - content-encoding: UTF-8
+        follow-redirects: true
+        headers:
+          Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+          Accept-Encoding: gzip, deflate
+          Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+          DNT: '1'
+          Referer: http://10.226.181.67:8080/jpetstore/actions/Account.action?signonForm=
+          Upgrade-Insecure-Requests: '1'
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+        label: 280 add to cart
+        method: GET
+        url: http://10.226.181.67:8080/jpetstore/actions/Catalog.action
+      include-timers: false
+      transaction: 270 add to cart
+    - do:
+      - content-encoding: UTF-8
+        follow-redirects: true
+        headers:
+          Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+          Accept-Encoding: gzip, deflate
+          Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+          DNT: '1'
+          Referer: http://10.226.181.67:8080/jpetstore/actions/Catalog.action
+          Upgrade-Insecure-Requests: '1'
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+        label: 281 add to cart
+        method: GET
+        url: http://10.226.181.67:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=BIRDS
+      - follow-redirects: true
+        headers:
+          Accept: '*/*'
+          Accept-Encoding: gzip, deflate, br
+          Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+          DNT: '1'
+          Referer: https://js.driftt.com/deploy/assets/index.html
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+        label: 282 add to cart
+        method: GET
+        url: https://js.driftt.com:443/embeds/1561986060000/gewhsy95fayk.json
+      - content-encoding: UTF-8
+        follow-redirects: true
+        headers:
+          Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+          Accept-Encoding: gzip, deflate
+          Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+          DNT: '1'
+          Referer: http://10.226.181.67:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=BIRDS
+          Upgrade-Insecure-Requests: '1'
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+        label: 283 add to cart
+        method: GET
+        url: http://10.226.181.67:8080/jpetstore/actions/Catalog.action?viewProduct=&productId=AV-CB-01
+      - follow-redirects: true
+        headers:
+          Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+          Accept-Encoding: gzip, deflate
+          Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+          DNT: '1'
+          Referer: http://10.226.181.67:8080/jpetstore/actions/Catalog.action?viewProduct=&productId=AV-CB-01
+          Upgrade-Insecure-Requests: '1'
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+        label: 284 add to cart
+        method: GET
+        url: http://10.226.181.67:8080/jpetstore/actions/Cart.action?addItemToCart=&workingItemId=EST-18
+      include-timers: false
+      transaction: 281 add to cart
+    - do:
+      - content-encoding: UTF-8
+        follow-redirects: true
+        headers:
+          Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+          Accept-Encoding: gzip, deflate
+          Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+          DNT: '1'
+          Referer: http://10.226.181.67:8080/jpetstore/actions/Cart.action?addItemToCart=&workingItemId=EST-18
+          Upgrade-Insecure-Requests: '1'
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+        label: 288 add to cart
+        method: GET
+        url: http://10.226.181.67:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=DOGS
+      - content-encoding: UTF-8
+        follow-redirects: true
+        headers:
+          Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+          Accept-Encoding: gzip, deflate
+          Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+          DNT: '1'
+          Referer: http://10.226.181.67:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=DOGS
+          Upgrade-Insecure-Requests: '1'
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+        label: 289 add to cart
+        method: GET
+        url: http://10.226.181.67:8080/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-DL-01
+      - content-encoding: UTF-8
+        follow-redirects: true
+        headers:
+          Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+          Accept-Encoding: gzip, deflate
+          Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+          DNT: '1'
+          Referer: http://10.226.181.67:8080/jpetstore/actions/Catalog.action?viewProduct=&productId=K9-DL-01
+          Upgrade-Insecure-Requests: '1'
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+        label: 290 add to cart
+        method: GET
+        url: http://10.226.181.67:8080/jpetstore/actions/Cart.action?addItemToCart=&workingItemId=EST-10
+      - follow-redirects: true
+        headers:
+          Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+          Accept-Encoding: gzip, deflate
+          Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+          DNT: '1'
+          Referer: http://10.226.181.67:8080/jpetstore/actions/Cart.action?addItemToCart=&workingItemId=EST-10
+          Upgrade-Insecure-Requests: '1'
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+        label: 291 add to cart
+        method: GET
+        url: http://10.226.181.67:8080/jpetstore/actions/Order.action?newOrderForm=
+      include-timers: false
+      transaction: 286 add to cart
+    - do:
+      - body:
+          __fp: 2dld1t815Ssz_M4Q9T7xt5HWv-tsF5x3byn9gaHejp0KEkgqMUZBeysqiTh6U-j7hg28hDeb-iSUlEQRbkiAs5aPsXJKYm7TfOaNRNEOj5WrigOYzCc0aA==
+          _sourcePage: RYV9q0BxIRf4JH9iYgcZhfhFzwfvKbaYAM-Y6FV8et8R2TTIMapeZfU-zIrEfDept8oCUiKSszDCxNF8L0DV3imbTesA7DRViLrGO7DycFE=
+          newOrder: Continue
+          order.billAddress1: 13 avenue la baguette
+          order.billAddress2: walou
+          order.billCity: bordeaux
+          order.billCountry: France
+          order.billState: '123'
+          order.billToFirstName: bakr
+          order.billToLastName: chakkor
+          order.billZip: '33800'
+          order.cardType: Visa
+          order.creditCard: 999 9999 9999 9999
+          order.expiryDate: 12/03
+        content-encoding: UTF-8
+        follow-redirects: true
+        headers:
+          Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+          Accept-Encoding: gzip, deflate
+          Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+          Content-Type: application/x-www-form-urlencoded
+          DNT: '1'
+          Referer: http://10.226.181.67:8080/jpetstore/actions/Order.action?newOrderForm=
+          Upgrade-Insecure-Requests: '1'
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+        label: 293 add to cart
+        method: POST
+        url: http://10.226.181.67:8080/jpetstore/actions/Order.action
+      - content-encoding: UTF-8
+        follow-redirects: true
+        headers:
+          Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+          Accept-Encoding: gzip, deflate
+          Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+          DNT: '1'
+          Referer: http://10.226.181.67:8080/jpetstore/actions/Order.action
+          Upgrade-Insecure-Requests: '1'
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+        label: 294 add to cart
+        method: GET
+        url: http://10.226.181.67:8080/jpetstore/actions/Order.action?newOrder=&confirmed=true
+      - content-encoding: UTF-8
+        follow-redirects: true
+        headers:
+          Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+          Accept-Encoding: gzip, deflate
+          Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+          DNT: '1'
+          Referer: http://10.226.181.67:8080/jpetstore/actions/Order.action?newOrder=&confirmed=true
+          Upgrade-Insecure-Requests: '1'
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0
+        label: 295 add to cart
+        method: GET
+        url: http://10.226.181.67:8080/jpetstore/actions/Catalog.action
+      include-timers: false
+      transaction: 293 add to cart
+    store-cache: false
+    store-cookie: true
+    use-dns-cache-mgr: false
+
