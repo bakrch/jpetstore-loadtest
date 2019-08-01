@@ -14,7 +14,6 @@
          loop: true
          variable-names: login,password
          random-order: false
-
  reporting:
    - module: jmeter
      test: Configuration Test
