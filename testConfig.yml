@@ -15,7 +15,7 @@
          variable-names: login,password
          random-order: false
 
- services:
+ reporting:
  - module: passfail
    criteria:
    - avg-rt>10ms for 7s, stop as failed
