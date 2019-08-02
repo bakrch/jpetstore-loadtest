@@ -2,7 +2,7 @@
  execution:
    - concurrency: 50
      ramp-up: 2m
-     hold-for: 60m
+     hold-for: 5m
      scenario:
        script: ./loadtest/jpetstore.jmx
        properties:
