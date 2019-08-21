@@ -2,7 +2,7 @@
  execution:
    - concurrency: 50
      ramp-up: 2m
-     hold-for: 5m
+     hold-for: 30m
      scenario:
        script: ./loadtest/jpetstore.jmx
        properties:
@@ -18,7 +18,7 @@
  reporting:
  - module: passfail
    criteria:
-   - avg-rt>10ms for 7s, stop as failed
+   - avg-rt>10s for 7s, stop as failed
    - hits of reserve >10 for 13s, continue as failed
  - module: junit-xml
    filename: ./loadtest/test-results.xml
